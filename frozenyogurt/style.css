@@ -1,0 +1,214 @@
+ .container {
+    height: 100%;
+    width: 80%;
+    margin: 0px auto;
+  }
+.header{
+    width: 100%;
+    background-color: #ededed;
+}
+.logo{
+  margin-right: 400px;
+}
+.header-items{
+padding: 20px; 
+}
+span{
+    padding: 10px;
+}
+h2{
+    color:#f3304f;
+}
+.new-product{
+    background-color: #ededed;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+.main-pic{
+    margin:0px;
+}
+.main-img{
+    width: 100%
+}
+.items{
+    background-color: #aaab13;;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+footer{
+    background-color: #f3304f;
+    padding: 50px;
+    text-align: center;
+}
+.foot-items{
+  padding:10px;
+}
+.items>a{
+    color: white;
+    text-decoration: none;
+}
+.location{
+    display: block;
+    padding-left: 20px;
+    margin-left:30px; 
+    margin-bottom: 10px;
+    margin-top: 5px;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    background-image: url("./img/location.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: black;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.flavour{
+    display: block;
+    padding-left: 20px;
+    margin-bottom: 10px;
+    margin-left:20px; 
+    margin-top: 5px;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    background-image: url("./img/drop.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+
+.story{
+    display: block;
+    padding-left: 20px;
+    margin-left:30px; 
+    margin-bottom: 10px;
+    margin-top: 5px;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    background-image: url("./img/hand-spock-o.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+
+.products{
+    display: block;
+    padding-left: 20px;
+    margin-left:20px; 
+    margin-bottom: 10px;
+    margin-top: 5px;
+    align-self: center;
+    width: 22px;
+    height: 22px;
+    background-image: url("./img/icecream.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.header-items >a{
+    text-decoration: none;
+    color:black;
+    padding:10px;
+}
+.facebook-btn{
+    padding-left: 20px;
+    margin-left:20px; 
+    margin-top: 5px;
+    align-self: center;
+    width: 32px;
+    height: 32px;
+    background-image: url("./img/facebook.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: white;
+    font-size: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.twitter-btn{
+    padding-left: 20px;
+    margin-left:20px; 
+    margin-top: 5px;
+    align-self: center;
+    width: 38px;
+    height: 38px;
+    background-image: url("./img/twitter-square.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: white;
+    font-size: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.googleplus-btn{
+    padding-left: 20px;
+    margin-left:20px; 
+    margin-top: 5px;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+    background-image: url("./img/google-plus.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: white;
+    font-size: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.pinterest-btn{
+    padding-left: 20px;
+    margin-left:20px; 
+    margin-top: 5px;
+    align-self: center;
+    width: 38px;
+    height: 38px;
+    background-image: url("./img/pinterest-square.svg");
+    background-size: 100% 100%;
+    border: 0;
+    color: white;
+    font-size: 0;
+    vertical-align: middle;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+}
+.yogurt{
+    float: right;
+}
+.links{
+    width: 100%;
+    padding: 20px 50px;
+    text-align: center;
+    
+}
+.protext {
+    text-align: center;
+}
+.item-div{
+    text-align: center;
+    display: inline-block;
+    margin-right: 20px;
+}
+a:hover {
+    color: #f3304f;
+}

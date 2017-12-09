@@ -1,0 +1,198 @@
+body{
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.img{
+    display: inline-block;
+    margin-left:10px;
+}
+.header{
+    margin-bottom: 10px;
+}
+.header-items{
+    display: inline-block;
+    position: relative;
+    bottom: 65px; left: 100px;
+   
+  
+
+}
+button{
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: rgb(218, 214, 214);
+    box-shadow: 2px 4px #888888;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: rgb(17, 17, 63);
+}
+.two-man{
+    height: 200px;
+    width: 200px;
+    border:1px solid grey;
+    border-radius: 50%;
+    margin-right:20px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top:-30px;
+
+}
+.flags{
+    height: 200px;
+    width: 200px;
+    border:1px solid grey;
+    border-radius: 50%;
+    margin-right:20px;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top:-30px;
+    left:250px;
+}
+.charts{
+    height: 200px;
+    width: 200px;
+    border:1px solid grey;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: white;
+    position: absolute;
+    top:-30px;
+    right:600px;
+   
+}
+.smiling{
+    float: right;
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    height: 420px;
+    
+}
+.man{
+    position: relative;
+    margin-top: 40px;  
+    background-color: rgb(183, 206, 214);
+    padding: 180px 20px 0px 20px;
+
+}
+.short-text{
+    padding-bottom: 20px;
+}
+.blog{
+    width:25%;
+    display:inline-block;
+    margin: 0;
+    padding-top:0; 
+    vertical-align: top;
+    padding-left: 20px;
+    
+}
+.fat-column{
+    width:40%;
+    display:inline-block;
+    margin: 0;
+    padding: 0px 20px;
+    vertical-align: top;
+}
+.last-column{
+    width:30%;
+    display:inline-block;
+    margin: 0;
+    vertical-align: top;
+}
+.text{
+    margin: 0px;
+    padding: 0;
+}
+.grey{
+    color: grey;
+    border-bottom: 1px dashed rgb(77, 75, 75);
+    padding-bottom: 10px;
+}
+a{
+    color:black;
+}
+.title{
+    color: rgb(17, 17, 63);
+    text-transform: uppercase;
+}
+
+.small-img{
+    float: left;
+    margin-right: 10px;
+ 
+}
+li{
+    margin: 10px;
+    
+}
+.grey-nodash{
+    color: grey;
+}
+button:hover{
+    background-color:skyblue
+}
+button:active{
+ background-color: rgb(31, 31, 109);
+ color: white;
+ border: none;
+}
+button:focus {outline:0;}
+footer{
+    background-color: rgb(243, 241, 241);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.america{
+    width: 15%;
+   padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+
+}
+.europe{
+    width: 15%;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.canada{
+    width: 15%;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.middle{
+    width: 15%;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.follow{
+    width: 15%;
+    padding: 10px;
+    display: inline-block;
+    vertical-align: top;
+}
+.icon{
+    padding:5px; 
+}
+a:hover{
+    color:skyblue
+}
+.grey-foot{
+    color: grey;
+}

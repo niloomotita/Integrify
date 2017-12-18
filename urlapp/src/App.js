@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import Expand from './Expand';
 import Shorten from './Shorten';
+import * as URLAPI from './URLAPI';
 class App extends Component {
   render() {
     return (

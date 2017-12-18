@@ -1,0 +1,147 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+    <form>
+        <div class="header">
+            <h1>
+                Let's talk
+            </h1>
+            <p> Think you have what it takes? Show us.</p>
+        </div>
+        <div class="personal">
+            <h3> 1. Personal information</h3>
+            <form action="">
+                <div class="name">
+                        <input type="text" placeholder="Full name*" required >
+                </div>
+                <div class="phone">
+                        <input type="tel" placeholder="Phone*" pattern=[0-9]{10} min="5" max='9' 
+                         required >
+                </div>
+                <div class="email">
+                        <input type="email" placeholder="Email*" required >
+                </div>
+                <div class="email">
+                        <input type="email" placeholder="Re-enter email*" required >
+                </div>
+              <div class="adr">
+                    <input type="text" placeholder="Address*" required >
+              </div>
+              <div class="adr"> 
+                    <input type="text" class="adr" >
+              </div>
+              <div class="logestic">
+                    <input type="text" placeholder="City*" required>
+              </div>
+              <div class="logestic">
+                    <input type="text" placeholder="State*" required>
+              </div>
+              <div class="logestic">
+                    <input type="text" placeholder="Country/Region*" required>
+              </div>
+              <div class="logestic">
+                    <input type="number" placeholder="Zip/Postal code*" required>
+              </div>
+              <div class="adr" >
+                    <input type="text" placeholder="How did you hear about us?" size="130" >
+              </div>
+              
+                
+            </form>
+            <h3> 2. Skills and location</h3>
+            <form action="">
+                <p> Which is your primary design discipline?*</p>
+                <input type="radio" id="research" name="radAnswer" value="Design-Research">
+                <label for="research">Design Research</label>
+                <input type="radio" id="visual" name="radAnswer" value="Visual-Design">
+                <label for="visual">Visual Design</label>
+                <input type="radio" id="ux" name="radAnswer" value="UX-Design">
+                <label for="ux">UX Design</label>
+                <input type="radio" id="front" name="radAnswer" value="Front-end-Dev">
+                <label for="front">Front-end Dev</label>
+            </form>
+            <div class="exp">
+                <p>Do you have experience with any other disciplines?</p>
+                <span class=check>
+                    <input type="checkbox" id="check1" name="check-answer1" value="Visual-Design"> 
+                    <label for="check1">Visual Design</label>
+                </span>
+                <span class="check">
+                    <input type="checkbox" id="check2" name="check-answer1" value="UX-Design">
+                    <label for="check2">UX Design</label> 
+                </span>
+                <span class="check">
+                    <input type="checkbox" id="check3" name="check-answer1" value="Front-end-Development"> 
+                    <label for="check3">Front-end Development</label> 
+                </span>
+            </div>
+            <div class="int">
+                <p>Where are you interested in working?</p>
+                <h5>You must be legally authorized to work without visa sponsorship in that location you choose.</h5>
+                <span class="check">
+                        <input type="checkbox" id="texas" name="check-answer" value="Austin-Texas"> 
+                        <label for="texas">Austin, Texas</label> 
+                </span>
+                <span class="check">
+                        <input type="checkbox" id="new-york" name="check-answer" value="New York-New York"> 
+                        <label for="new-york">New York, New York</label> 
+                </span>
+                <span class="check">
+                        <input type="checkbox" id="canada" name="check-answer" value="Toronto-Canada"> 
+                        <label for="canada">Toronto, Canada</label> 
+                </span>
+                <span class="check">
+                        <input type="checkbox" id="chaina" name="check-answer" value="Shanghai-China"> 
+                        <label for="chaina">Shanghai, China</label> 
+                </span> 
+                <span class="check">
+                        <input type="checkbox" id="ireland" name="check-answer" value="Dublin-Ireland"> 
+                        <label for="ireland">Dublin, Ireland</label> 
+                </span>
+                <span class="check">
+                        <input type="checkbox" id="uk" name="check-answer" value="Hursley-United Kingdom"> 
+                        <label for="uk">Hursley, United Kingdom</label> 
+                </span>
+                <span class="check">
+                        <input type="checkbox" id="germany" name="check-answer" value="Boeblingen-Germany"> 
+                        <label for="germany">Boeblingen, Germany</label> 
+                </span>
+                <span class="check">
+                        <input type="checkbox" id="some" name="check-answer" value="Somewhere-else"> 
+                        <label for="some">Somewhere else</label> 
+                </span>
+            </div>
+        </div>
+        <div class="porto">
+                <h3> 3. Portfolio</h3>
+                <p>Prove you are IBM's next great designer by showing us who you are. What you've done. How yoy think.</br> Tell us your story.</p>
+                <form action="">
+                    <div class="link">
+                            <input type="url" placeholder="Portfolio link*"  size="135" required>
+                    </div>
+                        
+                        <textarea name="text" id="text-area" cols="130" rows="10" placeholder="Anything else (another link, availability,etc.)?"></textarea>
+                </form>
+                
+        </div>
+    </form>
+    <button type="submit"> Submit</button>
+    </div>
+</body>
+
+</html>
+<!--
+<button class="default">Design Research</button>
+<button>Visual Design</button>
+<button>UX Design</button>
+<button>Front-end Dev</button> 
+-->

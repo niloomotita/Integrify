@@ -21,17 +21,17 @@
             <h3> 1. Personal information</h3>
             <form action="">
                 <div class="name">
-                        <input type="text" placeholder="Full name*" required pattern="(\D{3,10})+\s+(\D{3,8})">
+                        <input type="text" placeholder="Full name*" required pattern="([a-zA-z]{1,10})\s([a-zA-Z]{1,20})">
                 </div>
                 <div class="phone">
-                        <input type="tel" placeholder="Phone*" pattern="(\+|0{2})358[0-9]{9}"  
+                        <input type="tel" placeholder="Phone*" pattern="^(\+|0{2})358[0-9]{9}"  
                          required >
                 </div>
                 <div class="email">
-                        <input type="email" placeholder="Email*" required pattern = "">
+                        <input type="email" placeholder="Email*" required pattern = "(\w{1,8})@(\l{3,9})/.(\l)">
                 </div>
                 <div class="email">
-                        <input type="email" placeholder="Re-enter email*" required >
+                        <input type="email" placeholder="Re-enter email*" required pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$">
                 </div>
               <div class="adr">
                     <input type="text" placeholder="Address*" required >
@@ -40,16 +40,16 @@
                     <input type="text" class="adr" >
               </div>
               <div class="logestic">
-                    <input type="text" placeholder="City*" required>
+                    <input type="text" placeholder="City*" required pattern="[a-zA-Z]{2,20}">
               </div>
               <div class="logestic">
-                    <input type="text" placeholder="State*" required>
+                    <input type="text" placeholder="State*" required pattern="[a-zA-Z]{2,20}">
               </div>
               <div class="logestic">
-                    <input type="text" placeholder="Country/Region*" required>
+                    <input type="text" placeholder="Country/Region*" required pattern="[a-zA-Z]{2,20}">
               </div>
               <div class="logestic">
-                    <input type="number" placeholder="Zip/Postal code*" required>
+                    <input type="number" placeholder="Zip/Postal code*" required pattern="/d">
               </div>
               <div class="adr" >
                     <input type="text" placeholder="How did you hear about us?" size="130" >

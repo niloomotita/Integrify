@@ -195,6 +195,10 @@ input[type="email"]:focus{
     border-bottom: 1px solid red;
    width: 100%;
 }
+input[type="url"]:focus{
+    border-bottom: 1px solid red;
+   width: 100%;
+}
    input[type="tel"]:valid{
        border:none;
    }
@@ -204,10 +208,6 @@ input[type="email"]:focus{
 input[type="email"]:valid{
     border:none;
 }
-
-
-   input[type=number]::-webkit-inner-spin-button, 
-   input[type=number]::-webkit-outer-spin-button { 
-     -webkit-appearance: none; 
-     margin: 0; 
-   }
+input[type="url"]:valid{
+    border:none;
+}

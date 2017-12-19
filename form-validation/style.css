@@ -183,10 +183,18 @@ button{
     border-bottom: 1px solid #81868c;
     margin-top: 10px; 
    }
-   input:focus{
+   input[type="text"]:focus{
        border-bottom: 1px solid red;
-       width: 100%;
+      width: 100%;
    }
+   input[type="tel"]:focus{
+    border-bottom: 1px solid red;
+   width: 100%;
+}
+input[type="email"]:focus{
+    border-bottom: 1px solid red;
+   width: 100%;
+}
    input:valid{
        border:none;
    }

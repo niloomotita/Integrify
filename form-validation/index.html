@@ -21,14 +21,14 @@
             <h3> 1. Personal information</h3>
             <form action="">
                 <div class="name">
-                        <input type="text" placeholder="Full name*" required >
+                        <input type="text" placeholder="Full name*" required pattern="(\D{3,10})+\s+(\D{3,8})">
                 </div>
                 <div class="phone">
-                        <input type="tel" placeholder="Phone*" pattern=[0-9]{10} min="5" max='9' 
+                        <input type="tel" placeholder="Phone*" pattern="(\+|0{2})358[0-9]{9}"  
                          required >
                 </div>
                 <div class="email">
-                        <input type="email" placeholder="Email*" required >
+                        <input type="email" placeholder="Email*" required pattern = "">
                 </div>
                 <div class="email">
                         <input type="email" placeholder="Re-enter email*" required >

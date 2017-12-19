@@ -66,6 +66,7 @@ label{
     padding: 10px;
     margin-right: 20px;
     cursor: pointer;
+    
 }
 #ux{
    opacity: 0;
@@ -98,7 +99,7 @@ input[type = checkbox]{
     margin-left: -30px;
 }
 
-input[type="checkbox"] + label:before {
+input[type="checkbox"] + label::before {
     border: 1px solid white;
     content:"\00a0\00a0\00a0";
     font: 20px/1em sans-serif;
@@ -109,7 +110,7 @@ input[type="checkbox"] + label:before {
     margin-bottom: 10px;    
    
   }
-  input[type="checkbox"]:checked + label:before {
+  input[type="checkbox"]:checked + label::before {
     background: #fff;
     color: #333;
     content: "\2713";
@@ -182,8 +183,17 @@ button{
     border-bottom: 1px solid #81868c;
     margin-top: 10px; 
    }
- input:invalid{
-     border-bottom: dashed 2px rgb(245, 201, 7);
-     width: 100%;
- }
- 
+   input:focus{
+       border-bottom: 1px solid red;
+       width: 100%;
+   }
+   input:valid{
+       border:none;
+   }
+
+
+   input[type=number]::-webkit-inner-spin-button, 
+   input[type=number]::-webkit-outer-spin-button { 
+     -webkit-appearance: none; 
+     margin: 0; 
+   }

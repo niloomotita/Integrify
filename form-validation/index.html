@@ -34,7 +34,7 @@
                         <input type="email" placeholder="Re-enter email*" required >
                 </div>
               <div class="adr">
-                    <input type="text" placeholder="Address*" required >
+                    <input type="text" placeholder="Address*" required pattern="(\w+\s)*">
               </div>
               <div class="adr"> 
                     <input type="text" class="adr" >
@@ -49,7 +49,7 @@
                     <input type="text" placeholder="Country/Region*" required pattern="[a-zA-Z]{2,20}">
               </div>
               <div class="logestic">
-                    <input type="number" placeholder="Zip/Postal code*" required pattern="/d">
+                    <input type="number" placeholder="Zip/Postal code*" required pattern="\d">
               </div>
               <div class="adr" >
                     <input type="text" placeholder="How did you hear about us?" size="130" >

@@ -6,11 +6,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <link rel="stylesheet" href="./style.css">
+        
 </head>
 
 <body>
         <div class="container">
-                <form method="post">
+                <form method="post" >
                         <div class="header">
                                 <h1>
                                         Let's talk
@@ -24,7 +25,7 @@
                                                 <input type="text" placeholder="Full name*" required pattern="^[a-zA-z]+(\s[a-zA-Z]+)+$">
                                         </div>
                                         <div class="phone">
-                                                <input type="tel" placeholder="Phone*" pattern="^(\+|0{2})358-?0?[0-9]{9}$" required>
+                                                <input type="tel" placeholder="+358-452345678*" pattern="^(\+|0{2})358-?0?[0-9]{9}$" required>
                                         </div>
                                         <div class="email">
                                                 <input type="email" placeholder="Email*" required>
@@ -82,15 +83,22 @@
                                         <span class=check>
                                                 <input type="checkbox" id="check1" name="check-answer1" value="Visual-Design">
                                                 <label for="check1">Visual Design</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="check2" name="check-answer1" value="UX-Design">
                                                 <label for="check2">UX Design</label>
+                                                <button class="delete" >X</button>
                                         </span>
-                                        <span class="check">
+                                        <span class="check" id="sister">
                                                 <input type="checkbox" id="check3" name="check-answer1" value="Front-end-Development">
                                                 <label for="check3">Front-end Development</label>
+                                                <button class="delete">X</button>
                                         </span>
+                                        <div class="extraField"> 
+                                                <input type="text" class="extraInput">
+                                                <button id="add">Add</button>
+                                        </div>
                                 </div>
                                 <div class="int">
                                         <p>Where are you interested in working?</p>
@@ -99,34 +107,42 @@
                                         <span class="check">
                                                 <input type="checkbox" id="texas" name="check-answer" value="Austin-Texas">
                                                 <label for="texas">Austin, Texas</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="new-york" name="check-answer" value="New York-New York">
                                                 <label for="new-york">New York, New York</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="canada" name="check-answer" value="Toronto-Canada">
                                                 <label for="canada">Toronto, Canada</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="chaina" name="check-answer" value="Shanghai-China">
                                                 <label for="chaina">Shanghai, China</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="ireland" name="check-answer" value="Dublin-Ireland">
                                                 <label for="ireland">Dublin, Ireland</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="uk" name="check-answer" value="Hursley-United Kingdom">
                                                 <label for="uk">Hursley, United Kingdom</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="germany" name="check-answer" value="Boeblingen-Germany">
                                                 <label for="germany">Boeblingen, Germany</label>
+                                                <button class="delete">X</button>
                                         </span>
                                         <span class="check">
                                                 <input type="checkbox" id="some" name="check-answer" value="Somewhere-else">
                                                 <label for="some">Somewhere else</label>
+                                                <button  class="delete">X</button>
                                         </span>
                                 </div>
                         </div>
@@ -146,6 +162,7 @@
                         <button type="submit"> Submit</button>
                 </form> 
         </div>
+        <script src="./main.js"></script>
 </body>
 
 </html>

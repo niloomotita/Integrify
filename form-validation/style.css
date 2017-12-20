@@ -116,6 +116,7 @@ input[type="checkbox"] + label::before {
     content: "\2713";
     text-align: center;
   }
+   
 #text-area{
     width: 100%;
     background-color: transparent;
@@ -218,3 +219,19 @@ input[type="url"]:valid{
    margin: 10px 20px 10px 0;
     display: inline-block;
 }
+.delete{
+    opacity:0;
+    padding: 2px 5px;
+}
+.delete:hover{
+    opacity:1;
+    
+    
+}
+.extraInput{
+    background-color:  white;
+    padding: 10px;
+    color: black;
+    margin: 10px 10px 10px 0;
+}
+

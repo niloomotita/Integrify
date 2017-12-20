@@ -10,7 +10,7 @@
 
 <body>
         <div class="container">
-                <form>
+                <form method="post">
                         <div class="header">
                                 <h1>
                                         Let's talk
@@ -19,7 +19,7 @@
                         </div>
                         <div class="personal">
                                 <h3> 1. Personal information</h3>
-                                <form action="">
+                                <div>
                                         <div class="name">
                                                 <input type="text" placeholder="Full name*" required pattern="^[a-zA-z]+(\s[a-zA-Z]+)+$">
                                         </div>
@@ -55,19 +55,28 @@
                                         </div>
 
 
-                                </form>
+                                </div>
                                 <h3> 2. Skills and location</h3>
-                                <form action="">
+                                <div class="radiobox">
                                         <p> Which is your primary design discipline?*</p>
-                                        <input type="radio" id="research" name="radAnswer" value="Design-Research">
-                                        <label for="research">Design Research</label>
-                                        <input type="radio" id="visual" name="radAnswer" value="Visual-Design">
-                                        <label for="visual">Visual Design</label>
-                                        <input type="radio" id="ux" name="radAnswer" value="UX-Design">
-                                        <label for="ux">UX Design</label>
-                                        <input type="radio" id="front" name="radAnswer" value="Front-end-Dev">
-                                        <label for="front">Front-end Dev</label>
-                                </form>
+                                        <div class="radio">
+                                                <input type="radio" id="research" name="radAnswer" value="Design-Research">
+                                                <label for="research">Design Research</label>
+                                        </div>
+                                        <div class="radio">
+                                                <input type="radio" id="visual" name="radAnswer" value="Visual-Design">
+                                                <label for="visual">Visual Design</label>
+                                        </div>
+                                        <div class="radio">
+                                                <input type="radio" id="ux" name="radAnswer" value="UX-Design">
+                                                <label for="ux">UX Design</label>
+                                        </div>
+                                        <div class="radio">
+                                                <input type="radio" id="front" name="radAnswer" value="Front-end-Dev">
+                                                <label for="front">Front-end Dev</label>
+                                        </div>
+                                        
+                                </div>
                                 <div class="exp">
                                         <p>Do you have experience with any other disciplines?</p>
                                         <span class=check>
@@ -125,17 +134,17 @@
                                 <h3> 3. Portfolio</h3>
                                 <p>Prove you are IBM's next great designer by showing us who you are. What you've done. How
                                         yoy think.</br> Tell us your story.</p>
-                                <form action="">
+                                <div>
                                         <div class="link">
                                                 <input type="text" placeholder="Portfolio link*" size="135" required pattern="^https?://(\w+\.)+[a-z]{2,6}$">
                                         </div>
 
                                         <textarea name="text" id="text-area" cols="130" rows="10" placeholder="Anything else (another link, availability,etc.)?"></textarea>
-                                </form>
+                                </div>
 
                         </div>
-                </form>
-                <button type="submit"> Submit</button>
+                        <button type="submit"> Submit</button>
+                </form> 
         </div>
 </body>
 

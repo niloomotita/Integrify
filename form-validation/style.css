@@ -224,8 +224,6 @@ input[type="url"]:valid{
 }
 .delete:hover{
     opacity:1;
-    
-    
 }
 .extraInput{
     background-color:  white;
@@ -233,4 +231,10 @@ input[type="url"]:valid{
     color: black;
     margin: 10px 10px 10px 0;
 }
-
+.invalid-email{
+    background-color: rgb(245, 244, 238);
+    color: black;
+    border-bottom: 2px solid red !important;
+    width: 100%;
+    padding: 10px 10px 10px 2px;
+}

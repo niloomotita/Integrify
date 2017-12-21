@@ -27,11 +27,11 @@
                                         <div class="phone">
                                                 <input type="tel" placeholder="+358-452345678*" pattern="^(\+|0{2})358-?0?[0-9]{9}$" required>
                                         </div>
-                                        <div class="email">
-                                                <input type="email" placeholder="Email*" required>
+                                        <div class="email" >
+                                                <input type="email" placeholder="Email*" required id="firstemail">
                                         </div>
-                                        <div class="email">
-                                                <input type="email" placeholder="Re-enter email*" required>
+                                        <div class="email" >
+                                                <input type="email" placeholder="Re-enter email*" required id="secondemail">
                                         </div>
                                         <div class="adr">
                                                 <input type="text" placeholder="Address*" required pattern="^(\w+\s\w?)+$">
@@ -96,7 +96,7 @@
                                                 <button class="delete">X</button>
                                         </span>
                                         <div class="extraField"> 
-                                                <input type="text" class="extraInput">
+                                                <input type="text" class="extraInput" placeholder="Enter a new field">
                                                 <button id="add">Add</button>
                                         </div>
                                 </div>

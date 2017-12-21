@@ -37,4 +37,17 @@ const add = document.querySelector("#add");
 add.addEventListener("click", e => {
   e.preventDefault(e);
   addInput();
+ document.querySelector(".extraInput").value = '';
 });
+
+const emailValidation = ()=>{
+const firstEmail = document.querySelector('#firstemail');
+const secondEmail = document.querySelector('#secondemail');
+if(firstEmail.value !== secondEmail.value){
+  secondEmail.classList.add('invalid-email');
+}
+}
+const secondEmail = document.querySelector('#secondemail');
+secondEmail.addEventListener('blur',()=>{
+  emailValidation()
+})

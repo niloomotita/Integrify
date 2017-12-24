@@ -40,14 +40,16 @@ add.addEventListener("click", e => {
  document.querySelector(".extraInput").value = '';
 });
 
-const emailValidation = ()=>{
-const firstEmail = document.querySelector('#firstemail');
-const secondEmail = document.querySelector('#secondemail');
-if(firstEmail.value !== secondEmail.value){
-  secondEmail.classList.add('invalid-email');
+const emailValidation = (e)=>{
+  const firstEmail = document.querySelector('#firstemail');
+  const secondEmail = document.querySelector('#secondemail');
+  if(firstEmail.value !== secondEmail.value){
+    console.log(e)
+    secondEmail.setCustomValidity("The emails do not match!");
+  }else{
+    secondEmail.setCustomValidity("")
+  }
 }
-}
 const secondEmail = document.querySelector('#secondemail');
-secondEmail.addEventListener('blur',()=>{
-  emailValidation()
-})
+secondEmail.addEventListener('input',emailValidation)
+

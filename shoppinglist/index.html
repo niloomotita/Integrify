@@ -13,25 +13,25 @@
             <p>Organize your thoughts and make your life easier </p>
             <form action="post" >
                 <h3>Make your shoppinglist</h3>
-                <input type="text" name="new-item" placeholder="Enter an item you need to buy" class="new-item">
-                <input type="text" name="quantity" placeholder="quantity" pattern="/d" class="quantity">
-                <button type="submit" class="add">Add</button>
+                <input type="text" name="new-item" placeholder="Enter an item you need to buy" class="new-item" id="input-item">
+                <input type="text" name="quantity" placeholder="quantity" class="quantity" id="quantity">
+                <button type="submit" class="add" id="add">Add</button>
 
             </form>
-            <div class="buy">
+            <div class="buy" id="buy">
                 <h3>What do I need to buy:</h3>
                 <div class="buying">
-                        <input type="checkbox" name="milk" id="milk" value="milk" >
+                        <input type="checkbox" name="grocery" id="milk" value="milk" >
                         <label for="milk" >Milk</label>
                         <span class="number">2</span>
                 </div>
                 <div class="buying">
-                        <input type="checkbox" name="green-tea" id="green-tea" value="green-tea" >
+                        <input type="checkbox" name="grocery" id="green-tea" value="green-tea" >
                         <label for="green-tea">Green tea</label>
                         <span class="number">1</span>
                 </div>
                 <div class="buying">
-                        <input type="checkbox" name="chocolate" id ="chocolate" value="chocolate">
+                        <input type="checkbox" name="grocery" id ="chocolate" value="chocolate">
                         <label for="chocolate">chocolate</label>
                         <span class="number">1</span>
                 </div>
@@ -47,6 +47,6 @@
             </div>
 
         </div>
-        <script src="./main.js"></script>
+        <script src="./index.js"></script>
     </body>
 </html>

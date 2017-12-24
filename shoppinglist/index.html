@@ -1,0 +1,52 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Shoppinglist</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <link rel="stylesheet" href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Shoppinglist</h2>
+            <p>Organize your thoughts and make your life easier </p>
+            <form action="post" >
+                <h3>Make your shoppinglist</h3>
+                <input type="text" name="new-item" placeholder="Enter an item you need to buy" class="new-item">
+                <input type="text" name="quantity" placeholder="quantity" pattern="/d" class="quantity">
+                <button type="submit" class="add">Add</button>
+
+            </form>
+            <div class="buy">
+                <h3>What do I need to buy:</h3>
+                <div class="buying">
+                        <input type="checkbox" name="milk" id="milk" value="milk" >
+                        <label for="milk" >Milk</label>
+                        <span class="number">2</span>
+                </div>
+                <div class="buying">
+                        <input type="checkbox" name="green-tea" id="green-tea" value="green-tea" >
+                        <label for="green-tea">Green tea</label>
+                        <span class="number">1</span>
+                </div>
+                <div class="buying">
+                        <input type="checkbox" name="chocolate" id ="chocolate" value="chocolate">
+                        <label for="chocolate">chocolate</label>
+                        <span class="number">1</span>
+                </div>
+                
+
+            </div>
+            <div class="done">
+                <h3>Archived items:</h3>
+                <div class="buying">
+                        <input type="checkbox" name="chocolate" id ="chocolate" value="chocolate">
+                        <label for="chocolate" class="strike-over">chocolate</label>
+                </div>
+            </div>
+
+        </div>
+        <script src="./main.js"></script>
+    </body>
+</html>

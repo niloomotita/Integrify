@@ -86,3 +86,6 @@ form{
 .strike-over{
     text-decoration: line-through;
 }
+.is-hidden{
+display: none;
+}

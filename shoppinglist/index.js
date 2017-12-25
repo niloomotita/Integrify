@@ -28,46 +28,54 @@ const addItem = ()=>{
 // adding newinput to dom
     const parentEl = document.getElementById('buy');
     parentEl.insertBefore(newItem, parentEl.firstChild.previousElementSibling);
+
+    attachRemoveItems()
 }
 
 const add = document.getElementById('add');
 add.addEventListener('click',(e)=>{
-e.preventDefault()
-addItem()
-removeItem()
-copyItem()
-document.getElementById('input-item').value = ''
-document.getElementById('quantity').value = ''
+    e.preventDefault()
+    addItem()
+    
+ //   removeItem()
+ //   copyItem()
+    document.getElementById('input-item').value = ''
+    document.getElementById('quantity').value = ''
 })
 
-const removeItem = ()=>{
+const attachRemoveItems = ()=>{
 
     // getting all checkboxes  in buyinglist
     const removeableItems = Array.from(document.getElementsByClassName('buying-input'));
     console.log(removeableItems)
     removeableItems.forEach((box)=>{
-       box.addEventListener('change',()=>{
-           //console.log((box.parentElement).parentElement, 'baghali')
-           box.parentElement.classList.add('is-hidden');
-       })
-    })
+
+        box.onchange  = () => {
+        //console.log((box.parentElement).parentElement, 'baghali')
+        box.parentElement.classList.add('is-hidden');
+
+
+        const copiedItem =  box.parentElement
+        var cln = copiedItem.cloneNode(true);
+        cln.classList.remove('is-hidden');
+        cln.classList.add('strike-over')
+        console.log(cln)
+        document.getElementById('archive').appendChild(cln);
+
+    }
+});
 }
 
-const copyItem = ()=>{
-    const removeableItems = Array.from(document.getElementsByClassName('buying-input'));
-    removeableItems.forEach((box)=>{
-       box.addEventListener('change',()=>{
-          const copiedItem =  box.parentElement
-          var cln = copiedItem.cloneNode(true);
-          cln.classList.remove('is-hidden');
-          cln.classList.add('strike-over')
-          console.log(cln)
-          document.getElementById('archive').appendChild(cln);
 
-       })
-    })
+
+  
+
+const init = () => {
+    attachRemoveItems()
+   // copyItem()  
 }
 
-removeItem()
-copyItem()    
 
+
+// all starts here
+init()

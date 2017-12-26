@@ -5,6 +5,7 @@ body{
     width: 100%;
     height: 100%;
     background-color: rgb(255, 255, 255);
+    font-family: 'Nunito Sans', sans-serif;
 }
 
 .container{
@@ -13,25 +14,25 @@ body{
     padding: 10px;
 }
 .buy{
- background-color: rgb(245, 39, 63);
+ background-color: rgb(245, 39, 172);
  color: white;
  padding: 10px;
  border: 1px solid transparent;
- border-radius: 15px 0px 15px 0;
+ border-radius: 5px ;
  box-shadow: 12px 12px 7px rgb(138, 97, 97);
- margin-bottom: 20px;
+ margin-bottom: 30px;
  margin-top: 20px;
 }
 
 .done{
-    background-color: rgb(166, 180, 178);
+    background-color: rgb(78, 129, 220);
     color: white;
     padding: 10px;
     border: 1px solid transparent;
-    border-radius: 15px 0px 15px 0;
+    border-radius: 5px;
     box-shadow: 12px 12px 7px rgb(138, 97, 97);
-    margin-bottom: 20px;
-    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 h2 , p{
     text-align: center;
@@ -40,9 +41,10 @@ p{
     color: gray;
 }
 .buying{
-    font-family: 'Caveat', cursive;
-    font-size: 3vw;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 2vw;
     text-transform: capitalize;
+    padding: 10px;
 }
 .number{
     border-bottom: 1px solid white;
@@ -78,6 +80,7 @@ form{
     border: none;
     outline: none;
     font-size: 15px;
+    cursor: pointer;
 }
 .add:hover{
     background: rgb(6, 82, 197);
@@ -89,3 +92,35 @@ form{
 .is-hidden{
 display: none;
 }
+.delete{
+    background-color: transparent;
+    border: none;
+    color: white;
+    float: right;
+    margin: 0;
+    cursor: pointer;
+    outline: none;
+}
+.delete:hover{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }

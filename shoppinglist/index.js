@@ -80,12 +80,29 @@ const deleteItem = ()=>{
 
 }
 
+const showArchive = ()=>{
+    const boughtItems = document.querySelector('#archive');
+    const showBtn = document.querySelector('#show-btn');
+    const showHideBtn = document.querySelector('#show-hide-btn')
+    showBtn.addEventListener('click',()=>{
+        if(boughtItems.style.display === 'none'){
+            showHideBtn.innerHTML='<i class="fa fa-minus" aria-hidden="true"></i>';
+            boughtItems.style.display = 'block';
+        }else {
+            boughtItems.style.display = 'none';
+            showHideBtn.innerHTML='<i class="fa fa-plus" aria-hidden="true"></i>';
+        }
+        
+        
+    })
+}
 
   
 
 const init = () => {
     attachRemoveItems();
     deleteItem();
+    showArchive();
 }
 
 

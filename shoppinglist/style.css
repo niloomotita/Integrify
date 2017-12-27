@@ -25,14 +25,14 @@ body{
 }
 
 .done{
-    background-color: rgb(78, 129, 220);
+    background-color: rgb(24, 130, 243);
     color: white;
     padding: 10px;
     border: 1px solid transparent;
-    border-radius: 5px;
-    box-shadow: 12px 12px 7px rgb(138, 97, 97);
-    margin-bottom: 30px;
-    margin-top: 30px;
+    border-radius:0px 0 5px 5px;
+    margin:0;
+
+    
 }
 h2 , p{
     text-align: center;
@@ -75,12 +75,13 @@ form{
 }
 .add{
     padding: 10px 20px;;
-    background: linear-gradient(to bottom right, rgb(154, 234, 243), rgb(6, 22, 197));
+    background-color:rgb(24, 130, 243);
     color: white;
     border: none;
     outline: none;
     font-size: 15px;
     cursor: pointer;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
 }
 .add:hover{
     background: rgb(6, 82, 197);
@@ -124,3 +125,37 @@ display: none;
       transform: translate3d(4px, 0, 0);
     }
   }
+  .colapse{
+    color: white;
+    box-shadow: 12px 12px 7px rgb(138, 97, 97);
+    margin-bottom: 30px;
+    margin-top: 30px;
+    border: 0px solid transparent;
+    border-radius:0px 0 5px 5px;
+
+  }
+  .show-hide{
+    padding:  20px;;
+    background-color:rgb(24, 130, 243);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s;
+    border: 1px solid transparent;
+    border-radius:5px 5px 0px 0px;
+  }
+  .show-hide:hover{
+    background: rgb(6, 82, 197);
+}
+#show-hide-btn{
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+.arc{
+    font-size: 20px;
+    
+}

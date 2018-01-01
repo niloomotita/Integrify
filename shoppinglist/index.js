@@ -2,6 +2,7 @@ const addItem = ()=>{
 
     // the input users enter
     const inputItem = document.getElementById('input-item');
+    // stop the function if user enters empty input
     if(inputItem.value.trim() ===""){
         return
     }
@@ -28,7 +29,7 @@ const addItem = ()=>{
     newQuantity.classList.add('number');
     newQuantity.innerText=inputQuantity.value;
     
-// adding newinput to dom
+// adding newinput to DOM
     const parentEl = document.getElementById('buy');
     parentEl.insertBefore(newItem, parentEl.firstChild.previousElementSibling);
 
@@ -48,11 +49,9 @@ const attachRemoveItems = ()=>{
 
     // getting all checkboxes  in buyinglist
     const removeableItems = Array.from(document.getElementsByClassName('buying-input'));
-    console.log(removeableItems)
     removeableItems.forEach((box)=>{
 
         box.onchange  = () => {
-        //console.log((box.parentElement).parentElement, 'baghali')
         box.parentElement.classList.add('is-hidden');
 
         //coping hidden div to archive
@@ -79,7 +78,7 @@ const deleteItem = ()=>{
     })
 
 }
-
+ // make the archived item collapsible
 const showArchive = ()=>{
     const boughtItems = document.querySelector('#archive');
     const showBtn = document.querySelector('#show-btn');
@@ -92,8 +91,6 @@ const showArchive = ()=>{
             boughtItems.style.display = 'none';
             showHideBtn.innerHTML='<i class="fa fa-plus" aria-hidden="true"></i>';
         }
-        
-        
     })
 }
 

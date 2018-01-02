@@ -33,7 +33,7 @@ const addItem = ()=>{
     const parentEl = document.getElementById('buy');
     parentEl.insertBefore(newItem, parentEl.firstChild.previousElementSibling);
 
-    attachRemoveItems()
+    setOnChange()
     deleteItem()
 }
 
@@ -45,13 +45,24 @@ add.addEventListener('click',(e)=>{
     document.getElementById('quantity').value = ''
 })
 
-const attachRemoveItems = ()=>{
+const setOnChange = ()=>{
+    const movingItems = Array.from(document.getElementsByClassName('buying-input'))
+    movingItems.forEach((box)=>{
+    box.onchange = ()=>{
+        attachRemoveItems(box)
+    }
+    })
+}
+
+
+
+const attachRemoveItems = (box)=>{
 
     // getting all checkboxes  in buyinglist
-    const removeableItems = Array.from(document.getElementsByClassName('buying-input'));
-    removeableItems.forEach((box)=>{
+    //const removeableItems = Array.from(document.getElementsByClassName('buying-input'));
+    //removeableItems.forEach((box)=>{
 
-        box.onchange  = () => {
+        //box.onchange  = () => {
         box.parentElement.classList.add('is-hidden');
 
         //coping hidden div to archive
@@ -59,6 +70,8 @@ const attachRemoveItems = ()=>{
        // var cln = copiedItem.cloneNode(true);
        copiedItem.classList.remove('is-hidden')
        copiedItem.classList.add('strike-over')
+       
+       
        // cln.classList.remove('is-hidden');
        // cln.classList.add('strike-over')
         //console.log(box.id)
@@ -66,12 +79,13 @@ const attachRemoveItems = ()=>{
             //if(!archive.querySelector(`#${box.id}`)){
             console.log('bla')
             archive.appendChild(copiedItem);
+            box.parentElement.removeChild('input')
         //}
         
         deleteItem();
     }
-});
-}
+//});
+//}
 const addToArchive = (element)=>{
     const archive =document.getElementById('archive');
     archive.appendChild(element);
@@ -107,7 +121,7 @@ const showArchive = ()=>{
   
 
 const init = () => {
-    attachRemoveItems();
+    setOnChange()
     deleteItem();
     showArchive();
 }

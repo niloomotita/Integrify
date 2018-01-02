@@ -37,13 +37,17 @@ const addItem = ()=>{
     deleteItem()
 }
 
-const add = document.getElementById('add');
-add.addEventListener('click',(e)=>{
-    e.preventDefault()
-    addItem()
-    document.getElementById('input-item').value = ''
-    document.getElementById('quantity').value = ''
-})
+// add new items on clicking the add btn
+const addOnClick = ()=>{
+    const add = document.getElementById('add');
+    add.addEventListener('click',(e)=>{
+        e.preventDefault()
+        addItem()
+        document.getElementById('input-item').value = ''
+        document.getElementById('quantity').value = ''
+    })
+}
+
 
 const setOnChange = ()=>{
     const movingItems = Array.from(document.getElementsByClassName('buying-input'))
@@ -55,41 +59,26 @@ const setOnChange = ()=>{
 }
 
 
-
+// changing the position of the item based on parent element
 const attachRemoveItems = (box)=>{
-
-    // getting all checkboxes  in buyinglist
-    //const removeableItems = Array.from(document.getElementsByClassName('buying-input'));
-    //removeableItems.forEach((box)=>{
-
-        //box.onchange  = () => {
-        box.parentElement.classList.add('is-hidden');
+    box.parentElement.classList.add('is-hidden');
 
         //coping hidden div to archive
-        const copiedItem =  box.parentElement
-       // var cln = copiedItem.cloneNode(true);
-       copiedItem.classList.remove('is-hidden')
-       copiedItem.classList.add('strike-over')
-       
-       
-       // cln.classList.remove('is-hidden');
-       // cln.classList.add('strike-over')
-        //console.log(box.id)
-        const archive =document.getElementById('archive');
-            //if(!archive.querySelector(`#${box.id}`)){
-            console.log('bla')
-            archive.appendChild(copiedItem);
-            box.parentElement.removeChild('input')
-        //}
-        
-        deleteItem();
+    const copiedItem =  box.parentElement
+    copiedItem.classList.remove('is-hidden')
+    copiedItem.classList.add('strike-over')
+    const buy = document.getElementById('buy');  
+    const archive = document.getElementById('archive');
+    if (copiedItem.parentElement === buy){
+        archive.appendChild(copiedItem);
+    } else {
+        buy.appendChild(copiedItem);
     }
-//});
-//}
-const addToArchive = (element)=>{
-    const archive =document.getElementById('archive');
-    archive.appendChild(element);
+  
+    deleteItem();
 }
+
+
 
 // delete the item onclicking the bin icon
 const deleteItem = ()=>{ 
@@ -124,6 +113,7 @@ const init = () => {
     setOnChange()
     deleteItem();
     showArchive();
+    addOnClick();
 }
 
 

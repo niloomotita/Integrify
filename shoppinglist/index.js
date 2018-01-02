@@ -56,21 +56,25 @@ const attachRemoveItems = ()=>{
 
         //coping hidden div to archive
         const copiedItem =  box.parentElement
-        var cln = copiedItem.cloneNode(true);
-        cln.classList.remove('is-hidden');
-        cln.classList.add('strike-over')
-        console.log(box.id)
+       // var cln = copiedItem.cloneNode(true);
+       copiedItem.classList.remove('is-hidden')
+       copiedItem.classList.add('strike-over')
+       // cln.classList.remove('is-hidden');
+       // cln.classList.add('strike-over')
+        //console.log(box.id)
         const archive =document.getElementById('archive');
-            if(!archive.querySelector(`#${box.id}`)){
+            //if(!archive.querySelector(`#${box.id}`)){
             console.log('bla')
-            archive.appendChild(cln);
-        }
+            archive.appendChild(copiedItem);
+        //}
         
-
         deleteItem();
-
     }
 });
+}
+const addToArchive = (element)=>{
+    const archive =document.getElementById('archive');
+    archive.appendChild(element);
 }
 
 // delete the item onclicking the bin icon

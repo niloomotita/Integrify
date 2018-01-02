@@ -59,7 +59,13 @@ const attachRemoveItems = ()=>{
         var cln = copiedItem.cloneNode(true);
         cln.classList.remove('is-hidden');
         cln.classList.add('strike-over')
-        document.getElementById('archive').appendChild(cln);
+        console.log(box.id)
+        const archive =document.getElementById('archive');
+            if(!archive.querySelector(`#${box.id}`)){
+            console.log('bla')
+            archive.appendChild(cln);
+        }
+        
 
         deleteItem();
 

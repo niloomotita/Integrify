@@ -72,6 +72,7 @@ const attachRemoveItems = (box)=>{
     if (copiedItem.parentElement === buy){
         archive.appendChild(copiedItem);
     } else {
+        copiedItem.classList.remove('strike-over')
         buy.appendChild(copiedItem);
     }
   
